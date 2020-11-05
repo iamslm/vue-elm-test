@@ -1,5 +1,5 @@
 <template>
-    <header id="head_top">
+    <header id="head_top" @click="addUserInfo">
         哇哈哈哈哈{{signinUp}}
         <slot name="logo" ></slot>
         <slot name="search"></slot>
@@ -37,27 +37,36 @@
 
 <script>
 import {mapState, mapActions} from 'vuex'
+import store from '../../store'
+
+const GET_USERINFO = 'GET_USERINFO'
 
 export default {
     props: ['signinUp', 'headTitle', 'goBack'],
     data() {
         return{
-
+            
         }
     },
-    mounted() {
-        this.getUserInfo();
-    },
+    
     computed: {
         ...mapState([
             'userInfo'
         ])
     },
+    
     methods: {
         ...mapActions([
             'getUserInfo'
-        ])
-    }
+        ]),
+        addUserInfo() {
+            store.commit(GET_USERINFO, 10);
+        }
+    },
+    mounted() {
+        this.getUserInfo();
+        this.addUserInfo();
+    },
 
 }
 </script>

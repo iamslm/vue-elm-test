@@ -8,7 +8,7 @@ Vue.use(Vuex);
 
 const state = {
     latitude: '',
-    userInfo: null
+    userInfo: 0
 
 }
 
