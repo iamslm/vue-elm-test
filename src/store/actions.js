@@ -6,7 +6,7 @@ import {
 } from './mutation-types.js'
 
 export default {
-    getuserInfo({
+    getUserInfo({
         commit,
         state
     }) {
