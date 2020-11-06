@@ -165,9 +165,4 @@ export default {
         li
             color: #666;
             
-        
-    
-
-        
-
 </style>
