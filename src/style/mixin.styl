@@ -1,4 +1,6 @@
 $blue = #3190e8;
+$bc = #e4e4e4;
+$fc = #fff;
 
 
 
@@ -26,4 +28,13 @@ center() {
     top 50%
     left 50%
     transform: translate(-50%, -50%)
+}
+
+font($size, $line-height, $family = 'Microsoft YaHei') {
+    font $size $line-height $family
+}
+
+fj($type = space-between) {
+    display flex
+    justify-content $type
 }
