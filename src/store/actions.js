@@ -6,13 +6,12 @@ import {
 } from './mutation-types.js'
 
 export default {
-    getUserInfo({
+    async getUserInfo({
         commit,
         state
     }) {
-        setTimeout(() => {
-            commit(GET_USERINFO, 20);
-        }, 1000)
+            let res = await getUser();
+            commit(GET_USERINFO, res);
         
     }
 }

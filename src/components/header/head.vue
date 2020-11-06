@@ -1,5 +1,5 @@
 <template>
-    <header id="head_top" @click="getUserInfo">
+    <header id="head_top">
         哇哈哈哈哈{{signinUp}}
         <slot name="logo" ></slot>
         <slot name="search"></slot>
@@ -62,7 +62,7 @@ export default {
     },
     mounted() {
         this.getUserInfo();
-    },
+    }
 
 }
 </script>
