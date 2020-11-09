@@ -1,3 +1,5 @@
+$grey = #333;
+
 body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption, {
     padding: 0;
     margin: 0;
@@ -5,7 +7,7 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     font-style: normal;
     text-decoration: none;
     border: none;
-    color #333333
+    color $grey;
     font-weight: normal;
     font-family: "Microsoft Yahei";
     box-sizing: border-box;
@@ -16,7 +18,7 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     }
 }
 
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+//*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
 ::-webkit-scrollbar  
 {  
     width: 0px;  
@@ -39,6 +41,8 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
     background-color: #555;  
 }  
+
+ 
 
 input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
     -webkit-appearance: none;
@@ -99,11 +103,11 @@ html,body{
 }
 
 @keyframes backOpacity{
-   0%   { opacity: 1 }
-   25%  { opacity: .5 }
-   50%  { opacity: 1 }
-   75%  { opacity: .5 }
-   100% { opacity: 1 }
+   0%   { opacity: 1; }
+   25%  { opacity: .5; }
+   50%  { opacity: 1; }
+   75%  { opacity: .5; }
+   100% { opacity: 1; }
 }
 
 .animation_opactiy{

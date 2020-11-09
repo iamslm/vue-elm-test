@@ -12,15 +12,15 @@ ct() {
 }
 
 //宽高
-wh($width, $height) {
-    width: $width;
-    height $height;    
+wh(w, h) {
+    width: w;
+    height h;    
 }
 
 //字体大小，颜色
-sc($size, $color) {
-    font-size: $size;
-    color: $color;
+sc(s, c) {
+    font-size: s;
+    color: c;
 }
 
 center() {
@@ -30,11 +30,11 @@ center() {
     transform: translate(-50%, -50%)
 }
 
-font($size, $line-height, $family = 'Microsoft YaHei') {
-    font $size $line-height $family
+font(s, lh, f = 'Microsoft YaHei') {
+    font s lh f
 }
 
-fj($type = space-between) {
+fj(t = space-between) {
     display flex
-    justify-content $type
+    justify-content t
 }
