@@ -58,3 +58,11 @@ export const getcaptchas = () => fetch('/v1/captchas', {}, 'POST');
 
 //账号密码登录
 export const accountLogin = (username, password, captcha_code) => fetch('/v2/login', {username, password, captcha_code}, 'POST');
+
+export const searchplace = (cityid, value) => fetch('/v1/pois', {
+	type: 'search',
+	city_id: cityid,
+	keyword: value
+});
+
+export const currentcity = number => fetch('v1/cities/' + number);
